@@ -29,3 +29,6 @@ Jogo de geração de cenários e spawn de inimigos, onde o objetivo do jogador �
 
 # Vídeo Demonstrativo do Jogo de Referência
 - https://www.youtube.com/watch?v=4LRdw8LCCkU
+
+# Sprites Utilizados
+- **Tyny Swords**: https://pixelfrog-assets.itch.io/tiny-swords
