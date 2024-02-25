@@ -7,13 +7,14 @@ class VisualElement
 {
 private:
 	SDL_Renderer* renderer;
+	SDL_Texture* sprite;
 protected:
 	int positionX;
 	int positionY;
 	int width;
 	int height;
 public:
-	VisualElement(SDL_Renderer* renderer, int positionX, int positionY, int width, int height);
+	VisualElement(SDL_Renderer* renderer, SDL_Texture* sprite, int positionX, int positionY, int width, int height);
 
 	void renderElement();
 };

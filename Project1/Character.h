@@ -20,13 +20,14 @@ private:
 
 public:
     Character(SDL_Renderer* renderer, int positionX, int positionY, int width, int height);
-
+    SDL_Texture* texture;
     virtual void attack() = 0;
 
     void goDown();
     void goUp();
     void goRight();
     void goLeft();
+    void renderTexture();
 };
 
 #endif // CHARACTER_H

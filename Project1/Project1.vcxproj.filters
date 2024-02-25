@@ -19,6 +19,9 @@
     <Filter Include="Arquivos de Origem\entities">
       <UniqueIdentifier>{0725ae6d-4691-4146-97b4-868386af8183}</UniqueIdentifier>
     </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{f90ecf95-e1f6-4ea1-9019-8226a10e5f6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Origem.cpp">
@@ -68,5 +71,10 @@
     <ClInclude Include="Game.h">
       <Filter>Arquivos de Cabeçalho\entities</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Users\santyero\Downloads\Tiny Swords\Tiny Swords (Update 010)\Factions\Knights\Troops\Warrior\Red\Warrior_Red.png">
+      <Filter>assets</Filter>
+    </Image>
   </ItemGroup>
 </Project>

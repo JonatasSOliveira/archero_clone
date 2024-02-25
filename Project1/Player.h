@@ -10,7 +10,7 @@
 class Player : public Character {
 public:
     Player(SDL_Renderer* renderer, int positionX, int positionY, int width, int height);
-
+    
     std::vector<Skill*> activeSkills;
 
     void attack() override;

@@ -4,7 +4,7 @@
 
 Character::Character(
     SDL_Renderer* renderer, int positionX, int positionY, int width, int height
-) : VisualElement(renderer, positionX, positionY, width, height) {}
+) : VisualElement(renderer, this->texture, positionX, positionY, width, height) {}
 
 void Character::goDown() {
     this->positionY += this->currentSpeedPoints;
