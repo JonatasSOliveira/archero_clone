@@ -9,7 +9,7 @@
 
 class Player : public Character {
 public:
-    Player(SDL_Renderer* renderer, int positionX, int positionY, int width, int height);
+    Player(SDL_Renderer* renderer, int positionX, int positionY);
 
     std::vector<Skill*> activeSkills;
 

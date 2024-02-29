@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Origem.cpp" />
@@ -139,15 +140,18 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Skill.cpp" />
     <ClCompile Include="VisualElement.cpp" />
+    <ClCompile Include="VisualElementProps.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Background.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Skill.h" />
     <ClInclude Include="VisualElement.h" />
+    <ClInclude Include="VisualElementProps.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

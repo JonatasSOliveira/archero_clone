@@ -19,6 +19,12 @@
     <Filter Include="Arquivos de Origem\entities">
       <UniqueIdentifier>{0725ae6d-4691-4146-97b4-868386af8183}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\dtos">
+      <UniqueIdentifier>{da66a2dd-2ae8-4b02-8102-837bfe5e130b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\dtos">
+      <UniqueIdentifier>{a499dd43-25cd-4cfc-9964-0a0def51124a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Origem.cpp">
@@ -45,6 +51,12 @@
     <ClCompile Include="Game.cpp">
       <Filter>Arquivos de Origem\entities</Filter>
     </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualElementProps.cpp">
+      <Filter>Arquivos de Origem\dtos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
@@ -67,6 +79,12 @@
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Arquivos de Cabeçalho\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualElementProps.h">
+      <Filter>Arquivos de Cabeçalho\dtos</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

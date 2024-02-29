@@ -1,8 +1,10 @@
 #pragma once
 #ifndef CHARACTER_H
 #define CHARACTER_H
+#include <iostream>
 
 #include "VisualElement.h"
+#include "VisualElementProps.h"
 
 class Character : public VisualElement {
 private:
@@ -19,7 +21,7 @@ private:
     int currentSpeedAtackPoints = 0;
 
 public:
-    Character(SDL_Renderer* renderer, int positionX, int positionY, int width, int height);
+    Character(SDL_Renderer* renderer, VisualElementProps* visualElementProps);
 
     virtual void attack() = 0;
 

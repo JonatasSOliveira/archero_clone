@@ -1,10 +1,12 @@
 #include <SDL.h>
+#include <iostream>
 #include "Character.h"
 #include "VisualElement.h"
+#include "VisualElementProps.h"
 
 Character::Character(
-    SDL_Renderer* renderer, int positionX, int positionY, int width, int height
-) : VisualElement(renderer, positionX, positionY, width, height) {}
+    SDL_Renderer* renderer, VisualElementProps* visualElementProps
+) : VisualElement(renderer, visualElementProps) {}
 
 void Character::goDown() {
     this->positionY += this->currentSpeedPoints;

@@ -24,7 +24,7 @@ Game::Game(const Window& window): window(window) {
 void Game::startGame() {
 	SDL_bool done = SDL_FALSE;
 
-    Player player = Player(this->rendererRef, 800 / 2 - 25, 600 / 2 - 25, 50, 50);
+    Player player = Player(this->rendererRef, 800 / 2 - 25, 600 / 2 - 25);
 
     while (!done) {
         SDL_Event event;
