@@ -1,25 +1,30 @@
 #include <SDL.h>
-#include <iostream>
 #include "Character.h"
-#include "VisualElement.h"
-#include "VisualElementProps.h"
 
 Character::Character(
-    SDL_Renderer* renderer, VisualElementProps* visualElementProps
-) : VisualElement(renderer, visualElementProps) {}
+    RendererPort* adapter, RenderDataDTO* renderDataDTOParam
+) : VisualElement(adapter, renderDataDTOParam) {}
 
 void Character::goDown() {
-    this->positionY += this->currentSpeedPoints;
+    this->renderDataDTO->setPositionYInMeters(
+        this->renderDataDTO->getPositionYInMeters() + this->currentSpeedPoints
+    );
 }
 
 void Character::goUp() {
-   this->positionY -= this->currentSpeedPoints;
+    this->renderDataDTO->setPositionYInMeters(
+        this->renderDataDTO->getPositionYInMeters() - this->currentSpeedPoints
+    );
 }
 
 void Character::goRight() {
-    this->positionX += this->currentSpeedPoints;
+    this->renderDataDTO->setPositionXInMeters(
+        this->renderDataDTO->getPositionXInMeters() + this->currentSpeedPoints
+    );
 }
 
 void Character::goLeft() {
-    this->positionX -= this->currentSpeedPoints;
+    this->renderDataDTO->setPositionXInMeters(
+        this->renderDataDTO->getPositionXInMeters() - this->currentSpeedPoints
+    );
 }

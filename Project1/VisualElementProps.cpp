@@ -1,27 +1,27 @@
 #include "VisualElementProps.h"
 
 VisualElementProps::VisualElementProps(int positionX, int positionY, int width, int height, const std::string& hexColor) {
-	this->positionX = positionX;
-	this->positionY = positionY;
-	this->width = width;
-	this->height = height;
+	this->positionXInMeters = positionX;
+	this->positionYInMeters = positionY;
+	this->widthInMeters = width;
+	this->heightInMeters = height;
 	this->hexColor = hexColor;
 }
 
 int VisualElementProps::getPositionX() {
-	return this->positionX;
+	return this->positionXInMeters;
 }
 
 int VisualElementProps::getPositionY() {
-	return this->positionY;
+	return this->positionYInMeters;
 }
 
 int VisualElementProps::getWidth() {
-	return this->width;
+	return this->widthInMeters;
 }
 
 int VisualElementProps::getHeight() {
-	return this->height;
+	return this->heightInMeters;
 }
 
 std::string VisualElementProps::getHex() {

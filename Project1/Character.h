@@ -4,7 +4,6 @@
 #include <iostream>
 
 #include "VisualElement.h"
-#include "VisualElementProps.h"
 
 class Character : public VisualElement {
 private:
@@ -21,7 +20,7 @@ private:
     int currentSpeedAtackPoints = 0;
 
 public:
-    Character(SDL_Renderer* renderer, VisualElementProps* visualElementProps);
+    Character(RendererPort* adapter, RenderDataDTO* renderDataDTOParam);
 
     virtual void attack() = 0;
 

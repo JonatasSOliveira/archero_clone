@@ -1,9 +1,9 @@
+#include <SDL.h>
+#include <iostream>
 #include "Game.h"
 #include "Window.h"
 #include "Player.h"
-#include <SDL.h>
-
-#include <iostream>
+#include "SDLRendererAdapter.h"
 
 
 Game::Game(const Window& window): window(window) {
@@ -24,7 +24,7 @@ Game::Game(const Window& window): window(window) {
 void Game::startGame() {
 	SDL_bool done = SDL_FALSE;
 
-    Player player = Player(this->rendererRef, 800 / 2 - 25, 600 / 2 - 25);
+    Player player = Player(new SDLRendererAdapter(this->rendererRef), 800 / 2 - 25, 600 / 2 - 25);
 
     while (!done) {
         SDL_Event event;

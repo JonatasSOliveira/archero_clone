@@ -138,9 +138,10 @@
     <ClCompile Include="Origem.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="RenderDataDTO.cpp" />
+    <ClCompile Include="SDLRendererAdapter.cpp" />
     <ClCompile Include="Skill.cpp" />
     <ClCompile Include="VisualElement.cpp" />
-    <ClCompile Include="VisualElementProps.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -149,9 +150,11 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="RenderDataDTO.h" />
+    <ClInclude Include="RendererPort.h" />
+    <ClInclude Include="SDLRendererAdapter.h" />
     <ClInclude Include="Skill.h" />
     <ClInclude Include="VisualElement.h" />
-    <ClInclude Include="VisualElementProps.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

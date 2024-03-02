@@ -4,10 +4,10 @@
 class VisualElementProps
 {
 private:
-	int positionX;
-	int positionY;
-	int width;
-	int height;
+	float positionXInMeters;
+	float positionYInMeters;
+	float widthInMeters;
+	float heightInMeters;
 	std::string hexColor;
 
 public:
