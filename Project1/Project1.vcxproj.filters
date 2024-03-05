@@ -134,5 +134,8 @@
     <ClInclude Include="RenderDataDTO.h">
       <Filter>Arquivos de Cabeçalho\domain\dtos</Filter>
     </ClInclude>
+    <ClInclude Include="RendererPort.h">
+      <Filter>Arquivos de Cabeçalho\domain\dtos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

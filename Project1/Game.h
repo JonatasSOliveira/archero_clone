@@ -3,6 +3,9 @@
 #define GAME_H
 
 #include "Window.h"
+#include "Enemy.h"
+#include <vector>
+
 
 class Game
 {
@@ -12,6 +15,7 @@ private:
 public:
 	Game(const Window& window);
 
+	std::vector<Enemy> createEnemies(SDL_Renderer* renderer);
 	void startGame();
 };
 
