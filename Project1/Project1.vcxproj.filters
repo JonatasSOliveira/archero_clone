@@ -134,5 +134,8 @@
     <ClInclude Include="Scene.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
+    <ClInclude Include="RendererPort.h">
+      <Filter>Arquivos de Cabeçalho\domain\dtos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
