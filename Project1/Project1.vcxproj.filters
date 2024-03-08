@@ -75,9 +75,6 @@
     <ClCompile Include="Game.cpp">
       <Filter>Arquivos de Origem\entities</Filter>
     </ClCompile>
-    <ClCompile Include="Background.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Character.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
@@ -99,6 +96,9 @@
     <ClCompile Include="SDLRendererAdapter.cpp">
       <Filter>Arquivos de Origem\infrastructure\external_libs</Filter>
     </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Arquivos de Origem\domain\entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
@@ -106,9 +106,6 @@
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Arquivos de Cabeçalho\entities</Filter>
-    </ClInclude>
-    <ClInclude Include="Background.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
@@ -133,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="RenderDataDTO.h">
       <Filter>Arquivos de Cabeçalho\domain\dtos</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
