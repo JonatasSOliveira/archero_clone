@@ -8,7 +8,7 @@
 
 Enemy::Enemy(
     RendererPort* adapter
-) : Character(adapter, new RenderDataDTO(0, 0, 50, 50, "#ffff00")) {
+) : Character(adapter, new RenderDataDTO(0, 0, 50, 50, "#0000ff")) {
     this->randomizePosition();
 }
 
@@ -18,7 +18,7 @@ void Enemy::attack() {
 
 void Enemy::randomizePosition() {
     //seta posicao aleatoria
-    srand(time(0));
+
     int randomX = rand() % 800;
     int randomY = rand() % 600;
     this->renderDataDTO->setPositionXInMeters(randomX);

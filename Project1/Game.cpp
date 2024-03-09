@@ -26,7 +26,7 @@ Game::Game(const Window& window): window(window) {
 void Game::startGame() {
 	SDL_bool done = SDL_FALSE;
 
-    Player player = Player(new SDLRendererAdapter(this->rendererRef), 800 / 2 - 25, 50);
+    Player player = Player(new SDLRendererAdapter(this->rendererRef), 800 / 2 - 25, 450);
     std::vector<Enemy> enemies = this->createEnemies(this->rendererRef);
     std::cout << "Enemies count: " << enemies.size() << std::endl;
 
