@@ -6,6 +6,7 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "SDLRendererAdapter.h"
+#include "Scene.h"
 
 
 Game::Game(const Window& window): window(window) {
@@ -25,8 +26,10 @@ Game::Game(const Window& window): window(window) {
 
 void Game::startGame() {
 	SDL_bool done = SDL_FALSE;
+    SDLRendererAdapter* sdlAdapter = new SDLRendererAdapter(this->rendererRef);
 
-    Player player = Player(new SDLRendererAdapter(this->rendererRef), 800 / 2 - 25, 50);
+    Player player = Player(sdlAdapter, this->configManager.getWindowWidth() / 2 - 25, this->configManager.getSceneHeight());
+    Scene scene = Scene(sdlAdapter);
     std::vector<Enemy> enemies = this->createEnemies(this->rendererRef);
     std::cout << "Enemies count: " << enemies.size() << std::endl;
 
@@ -38,26 +41,12 @@ void Game::startGame() {
             }
         }
 
-        const Uint8* currentKeyStates = SDL_GetKeyboardState(NULL);
-        if (currentKeyStates[SDL_SCANCODE_UP]) {
-            player.goUp();
-        }
-        if (currentKeyStates[SDL_SCANCODE_DOWN]) {
-            player.goDown();
-        }
-        if (currentKeyStates[SDL_SCANCODE_LEFT]) {
-            player.goLeft();
-        }
-        if (currentKeyStates[SDL_SCANCODE_RIGHT]) {
-            player.goRight();
-        }
-
         SDL_SetRenderDrawColor(this->rendererRef, 0xFF, 0xFF, 0xFF, 0xFF); // Branco
         SDL_RenderClear(this->rendererRef);
 
-        // SDL_Rect fillRect = { squareX, squareY, 50, 50 };
-        // SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF); // Vermelho
-        // SDL_RenderFillRect(renderer, &fillRect);
+        scene.renderElement();
+
+        player.verifyKeyboardCommands();
         player.renderElement();
         for (Enemy enemy : enemies) {
             enemy.renderElement();
@@ -75,6 +64,7 @@ std::vector<Enemy> Game::createEnemies(SDL_Renderer* renderer) {
     int enemiesCount = 1 + (rand() / 8);
 
     std::vector<Enemy> enemies;
+    srand(time(nullptr));
     for (int i = 0; i < enemiesCount; ++i) {
         Enemy enemy = Enemy(new SDLRendererAdapter(this->rendererRef));
         enemies.push_back(enemy);

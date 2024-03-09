@@ -14,6 +14,8 @@ public:
     std::vector<Skill*> activeSkills;
 
     void attack() override;
+
+    void verifyKeyboardCommands();
 };
 
 #endif // PLAYER_H

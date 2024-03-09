@@ -8,7 +8,7 @@
 
 Enemy::Enemy(
     RendererPort* adapter
-) : Character(adapter, new RenderDataDTO(0, 0, 50, 50, "#ffff00")) {
+) : Character(adapter, new RenderDataDTO(0, 0, 50, 50, "#ff0000")) {
     this->randomizePosition();
 }
 
@@ -17,10 +17,10 @@ void Enemy::attack() {
 }
 
 void Enemy::randomizePosition() {
-    //seta posicao aleatoria
-    srand(time(0));
-    int randomX = rand() % 800;
-    int randomY = rand() % 600;
+    float randomX = this->configManager.getScenePositionX() + (rand() % (this->configManager.getSceneWith() - 50));
+    float randomY = this->configManager.getScenePositionY() + (rand() % (this->configManager.getSceneHeight() - 50));
+    std::cout << "randomY" << randomY << std::endl;
+    std::cout << "randomX" << randomX << std::endl;
     this->renderDataDTO->setPositionXInMeters(randomX);
     this->renderDataDTO->setPositionYInMeters(randomY);
  }

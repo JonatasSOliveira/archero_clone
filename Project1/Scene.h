@@ -1,8 +1,9 @@
 #pragma once
 #include "VisualElement.h"
 
-class Scene: VisualElement
+class Scene: public VisualElement
 {
-	Scene(RendererPort* adapter, RenderDataDTO* renderDataDTOParam);
+public:
+	Scene(RendererPort* adapter);
 };
 

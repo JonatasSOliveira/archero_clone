@@ -5,6 +5,7 @@
 #include "Window.h"
 #include "Enemy.h"
 #include <vector>
+#include "ConfigManager.h"
 
 
 class Game
@@ -12,6 +13,7 @@ class Game
 private:
 	Window window;
 	SDL_Renderer* rendererRef = nullptr;
+	ConfigManager configManager = ConfigManager();
 public:
 	Game(const Window& window);
 
