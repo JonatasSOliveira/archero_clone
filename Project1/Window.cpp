@@ -2,6 +2,8 @@
 #include <SDL.h>
 #include <iostream>
 
+using namespace Game;
+
 Window::Window(int width, int height) {
     this->width = width;
     this->height = height;

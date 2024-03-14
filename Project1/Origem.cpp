@@ -4,16 +4,14 @@
 #include "Window.h"
 #include "Player.h"
 #include "Game.h"
-#include "ConfigManager.h"
+#include "config.h"
 
-const int WINDOW_WIDTH = 800;
-const int WINDOW_HEIGHT = 600;
+using namespace Game;
 
 int main(int argc, char* argv[]) {
-    ConfigManager configManager = ConfigManager();
-    Window window = Window(configManager.getWindowWidth(), configManager.getWindowHeight());
+    Window window = Window(Config::windowWidth, Config::windowHeight);
     window.createWindow();
-    Game game = Game(window);
+    GameEngine game = GameEngine(window);
     game.startGame();
     SDL_DestroyWindow(window.getWindowRef());
     SDL_Quit();

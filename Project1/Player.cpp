@@ -1,10 +1,11 @@
 #include <SDL.h>
 #include "Player.h"
 
+using namespace Game;
 
 Player::Player(
-    RendererPort* adapter, int positionXInMeters, int positionYInMeters
-) : Character(adapter, new RenderDataDTO(positionXInMeters, positionYInMeters, 50, 50, "#ffff00")) {}
+    RendererPort* adapter, float positionXInMeters, float positionYInMeters
+) : Character(adapter, RenderDataDTO{ positionXInMeters, positionYInMeters, 50, 50, "#ffff00" }) {}
 
 void Player::attack() {
     std::cout << "Player attack" << std::endl;

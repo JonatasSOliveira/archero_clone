@@ -4,13 +4,14 @@
 #include "Game.h"
 #include "Window.h"
 #include "Player.h"
-#include "Enemy.h"
 #include "SDLRendererAdapter.h"
 #include "Scene.h"
+#include "config.h"
 
-Game::Game(const Window &window) : window(window)
+using namespace Game;
+
+GameEngine::GameEngine(Window& window_) : window(window_)
 {
-    this->window = window;
     if (this->window.getWindowRef() == nullptr)
     {
     }
@@ -25,12 +26,12 @@ Game::Game(const Window &window) : window(window)
     }
 }
 
-void Game::startGame()
+void GameEngine::startGame()
 {
     SDL_bool done = SDL_FALSE;
     SDLRendererAdapter *sdlAdapter = new SDLRendererAdapter(this->rendererRef);
 
-    Player player = Player(sdlAdapter, this->configManager.getWindowWidth() / 2 - 25, this->configManager.getSceneHeight());
+    Player player = Player(sdlAdapter, Config::windowWidth / 2 - 25, Config::sceneHeight);
     Scene scene = Scene(sdlAdapter);
     std::vector<Enemy> enemies = this->createEnemies(this->rendererRef);
     std::cout << "Enemies count: " << enemies.size() << std::endl;
@@ -65,7 +66,7 @@ void Game::startGame()
     SDL_DestroyRenderer(this->rendererRef);
 }
 
-std::vector<Enemy> Game::createEnemies(SDL_Renderer *renderer)
+std::vector<Enemy> GameEngine::createEnemies(SDL_Renderer *renderer)
 {
     int enemiesCount = 1 + (rand() / 8);
 

@@ -1,9 +1,10 @@
 #pragma once
 #include "VisualElement.h"
 
-class Scene: public VisualElement
-{
-public:
-	Scene(RendererPort* adapter);
-};
-
+namespace Game {
+	class Scene : public VisualElement
+	{
+	public:
+		Scene(RendererPort* adapter);
+	};
+}

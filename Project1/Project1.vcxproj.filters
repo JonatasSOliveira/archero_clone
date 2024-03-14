@@ -55,6 +55,12 @@
     <Filter Include="Arquivos de Cabeçalho\domain\ports\output_ports">
       <UniqueIdentifier>{1425328e-7039-4060-887f-48a442b8604d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\domain\engines">
+      <UniqueIdentifier>{28dafd5e-9800-45ef-af08-4ea9f064a652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\domain\engines">
+      <UniqueIdentifier>{323b2016-4ce8-4398-b530-592f9faa5c23}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Origem.cpp">
@@ -75,9 +81,6 @@
     <ClCompile Include="VisualElement.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
-    <ClCompile Include="RenderDataDTO.cpp">
-      <Filter>Arquivos de Origem\domain\dtos</Filter>
-    </ClCompile>
     <ClCompile Include="SDLRendererAdapter.cpp">
       <Filter>Arquivos de Origem\infrastructure\external_libs</Filter>
     </ClCompile>
@@ -89,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Arquivos de Origem\application</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsEngine.cpp">
+      <Filter>Arquivos de Origem\domain\engines</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -106,9 +112,6 @@
     </ClInclude>
     <ClInclude Include="VisualElement.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
-    </ClInclude>
-    <ClInclude Include="RendererPort.h">
-      <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
     </ClInclude>
     <ClInclude Include="SDLRendererAdapter.h">
       <Filter>Arquivos de Cabeçalho\infrasctructure\external_libs</Filter>
@@ -131,5 +134,22 @@
     <ClInclude Include="Window.h">
       <Filter>Arquivos de Cabeçalho\application</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsEngine.h">
+      <Filter>Arquivos de Cabeçalho\domain\engines</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererPort.h">
+      <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project1.rc">
+      <Filter>Arquivos de Recurso</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

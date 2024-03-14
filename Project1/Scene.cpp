@@ -1,14 +1,15 @@
 #include "Scene.h"
-#include "ConfigManager.h"
+#include "config.h"
 
-ConfigManager configManager = ConfigManager();
+using namespace Game;
 
-Scene::Scene(RendererPort* adapter) : VisualElement(adapter, new RenderDataDTO(
-	configManager.getScenePositionX(),
-	configManager.getScenePositionY(),
-	configManager.getSceneWith(),
-	configManager.getSceneHeight(),
-	"#0000FF"
-)) {
+Scene::Scene(RendererPort* adapter) : VisualElement(adapter, RenderDataDTO{
+		Config::scenePositionX,
+		Config::scenePositionY,
+		Config::sceneWidth,
+		Config::sceneHeight,
+		"#0000FF"
+	}
+) {
 
 }

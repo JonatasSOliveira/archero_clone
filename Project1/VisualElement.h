@@ -4,19 +4,30 @@
 #include "RendererPort.h"
 #include "RenderDataDTO.h"
 
+namespace Game {
+	class VisualElement
+	{
+	protected:
+		RendererPort* rendererPort;
+		float positionXInMeters;
+		float positionYInMeters;
+		float widthInMeters;
+		float heightInMeters;
+		std::string hexColor;
 
-class VisualElement
-{
-protected:
-	RendererPort* rendererPort;
-	RenderDataDTO* renderDataDTO;
+	public:
+		VisualElement(RendererPort* adapter, const RenderDataDTO& renderDataDTOParam);
 
-public:
-	VisualElement(RendererPort* adapter, RenderDataDTO* renderDataDTOParam);
-
-	void renderElement() {
-		this->rendererPort->renderElement(this->renderDataDTO);
-	}
-};
+		void renderElement() {
+			this->rendererPort->renderElement(RenderDataDTO{
+				this->positionXInMeters,
+				this->positionYInMeters,
+				this->widthInMeters,
+				this->heightInMeters,
+				this->hexColor
+			});
+		}
+	};
+}
 
 #endif // VISUALELEMENT_H

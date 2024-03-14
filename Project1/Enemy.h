@@ -4,18 +4,16 @@
 
 #include "Character.h"
 #include <iostream>
-#include "ConfigManager.h"
 
-class Enemy : public Character {
-private:
-    ConfigManager configManager = ConfigManager();
+namespace Game {
+    class Enemy : public Character {
 
-public:
-    Enemy(RendererPort* adapter);
-    void attack() override;
-    void randomizePosition();
-    void updateEnemy();
-};
-
+    public:
+        Enemy(RendererPort* adapter);
+        void attack() override;
+        void randomizePosition();
+        void updateEnemy();
+    };
+}
 
 #endif // ENEMY_H

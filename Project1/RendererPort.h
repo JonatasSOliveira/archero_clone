@@ -1,9 +1,11 @@
 #pragma once
 #include "RenderDataDTO.h";
 
-class RendererPort
-{
-public:
-	virtual void renderElement(RenderDataDTO *renderDataDTO) = 0;
-	virtual ~RendererPort() {}
-};
+namespace Game {
+	class RendererPort
+	{
+	public:
+		virtual void renderElement(const RenderDataDTO& renderDataDTO) = 0;
+		virtual ~RendererPort() {}
+	};
+}

@@ -4,18 +4,19 @@
 
 #include <SDL.h>
 
-class Window
-{
-private:
-	SDL_Window* windowRef = nullptr;
-	int width;
-	int height;
-public:
-	Window(int width, int height);
+namespace Game {
+	class Window
+	{
+	private:
+		SDL_Window* windowRef = nullptr;
+		int width;
+		int height;
+	public:
+		Window(int width, int height);
 
-	void createWindow();
+		void createWindow();
 
-	SDL_Window* getWindowRef();
-};
-
+		SDL_Window* getWindowRef();
+	};
+}
 #endif // WINDOW_H

@@ -4,9 +4,11 @@
 #include "VisualElementProps.h"
 #include <cstdlib>
 #include <ctime>
+#include "config.h"
 
-Enemy::Enemy(
-    RendererPort *adapter) : Character(adapter, new RenderDataDTO(0, 0, 50, 50, "#ff0000"))
+using namespace Game;
+
+Enemy::Enemy(RendererPort* adapter) : Character(adapter, RenderDataDTO{ 0, 0, 50, 50, "#ff0000" })
 {
     this->randomizePosition();
 }
@@ -18,12 +20,12 @@ void Enemy::attack()
 
 void Enemy::randomizePosition()
 {
-    float randomX = this->configManager.getScenePositionX() + (rand() % (this->configManager.getSceneWith() - 50));
-    float randomY = this->configManager.getScenePositionY() + (rand() % (this->configManager.getSceneHeight() - 50));
+    float randomX = Config::scenePositionX + (rand() % (Config::sceneWidth - 50));
+    float randomY = Config::scenePositionY + (rand() % (Config::sceneHeight - 50));
     std::cout << "randomY" << randomY << std::endl;
     std::cout << "randomX" << randomX << std::endl;
-    this->renderDataDTO->setPositionXInMeters(randomX);
-    this->renderDataDTO->setPositionYInMeters(randomY);
+    this->positionXInMeters = randomX;
+    this->positionYInMeters = randomY;
 }
 
 void Enemy::updateEnemy() {}

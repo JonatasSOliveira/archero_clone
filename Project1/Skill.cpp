@@ -1,6 +1,6 @@
 #include "Skill.h"
 
-Skill::Skill(std::string name, std::string description) {
+Skill::Skill(std::string_view name, std::string_view description) {
     this->name = name;
     this->description = description;
 }

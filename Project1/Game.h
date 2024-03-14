@@ -5,21 +5,20 @@
 #include "Window.h"
 #include "Enemy.h"
 #include <vector>
-#include "ConfigManager.h"
 
+namespace Game {
+	class GameEngine
+	{
+	private:
+		Window& window;
+		SDL_Renderer* rendererRef = nullptr;
+	public:
+		GameEngine(Window& window_);
 
-class Game
-{
-private:
-	Window window;
-	SDL_Renderer* rendererRef = nullptr;
-	ConfigManager configManager = ConfigManager();
-public:
-	Game(const Window& window);
-
-	std::vector<Enemy> createEnemies(SDL_Renderer* renderer);
-	void startGame();
-};
+		std::vector<Enemy> createEnemies(SDL_Renderer* renderer);
+		void startGame();
+	};
+}
 
 #endif // GAME_H
 

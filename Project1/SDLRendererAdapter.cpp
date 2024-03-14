@@ -4,8 +4,13 @@
 #include <iomanip>
 #include <vector>
 
-void SDLRendererAdapter::setRGBAColors(std::string hexColor) {
-    std::string hex = (hexColor[0] == '#') ? hexColor.substr(1) : hexColor;
+using namespace Game;
+
+void SDLRendererAdapter::setRGBAColors(std::string_view hexColor) {
+    std::string hex = std::string(hexColor); // Convertendo std::string_view para std::string
+    if (!hex.empty() && hex[0] == '#') {
+        hex = hex.substr(1); // Removendo '#' se presente
+    }
 
     // Converte o valor hexadecimal para um valor inteiro
     std::stringstream ss;
@@ -25,13 +30,13 @@ void SDLRendererAdapter::setRGBAColors(std::string hexColor) {
     }
 }
 
-void SDLRendererAdapter::renderElement(RenderDataDTO* renderDataDTO) {
-    this->setRGBAColors(renderDataDTO->getHexColor());
+void SDLRendererAdapter::renderElement(const RenderDataDTO& renderDataDTO) {
+    this->setRGBAColors(renderDataDTO.hexColor);
     SDL_Rect fillRect = {
-        renderDataDTO->getPositionXInMeters(),
-        renderDataDTO->getPositionYInMeters(),
-        renderDataDTO->getWidthInMeters(),
-        renderDataDTO->getHeightInMeters()
+        renderDataDTO.positionXInMeters,
+        renderDataDTO.positionYInMeters,
+        renderDataDTO.widthInMeters,
+        renderDataDTO.heightInMeters
     };
     SDL_SetRenderDrawColor(this->renderer, this->redColor, this->greenColor, this->blueColor, this->alphaColor);
     SDL_RenderFillRect(this->renderer, &fillRect);

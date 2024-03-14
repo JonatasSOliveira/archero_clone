@@ -1,30 +1,25 @@
 #include <SDL.h>
 #include "Character.h"
 
+using namespace Game;
+
 Character::Character(
-    RendererPort* adapter, RenderDataDTO* renderDataDTOParam
+    RendererPort* adapter, const RenderDataDTO& renderDataDTOParam
 ) : VisualElement(adapter, renderDataDTOParam) {}
 
 void Character::goDown() {
-    this->renderDataDTO->setPositionYInMeters(
-        this->renderDataDTO->getPositionYInMeters() + this->currentSpeedPoints
-    );
+    this->positionYInMeters = this->positionYInMeters + this->currentSpeedPoints;
 }
 
 void Character::goUp() {
-    this->renderDataDTO->setPositionYInMeters(
-        this->renderDataDTO->getPositionYInMeters() - this->currentSpeedPoints
-    );
+    this->positionYInMeters = this->positionYInMeters - this->currentSpeedPoints;
 }
 
 void Character::goRight() {
-    this->renderDataDTO->setPositionXInMeters(
-        this->renderDataDTO->getPositionXInMeters() + this->currentSpeedPoints
-    );
+    this->positionXInMeters = this->positionXInMeters + this->currentSpeedPoints;
 }
 
 void Character::goLeft() {
-    this->renderDataDTO->setPositionXInMeters(
-        this->renderDataDTO->getPositionXInMeters() - this->currentSpeedPoints
-    );
+    this->positionXInMeters = this->positionXInMeters - this->currentSpeedPoints;
+
 }

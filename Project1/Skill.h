@@ -3,6 +3,7 @@
 #define SKILL_H
 
 #include <string>
+#include <string_view>
 
 class Skill {
 private:
@@ -10,7 +11,7 @@ private:
     std::string description;
 
 public:
-    Skill(std::string name, std::string description);
+    Skill(std::string_view name, std::string_view description);
 
     std::string getName();
     std::string getDescription();

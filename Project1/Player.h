@@ -7,16 +7,18 @@
 #include <vector>
 #include <iostream>
 
-class Player : public Character {
-public:
-    Player(RendererPort* adapter, int positionX, int positionY);
+namespace Game {
+    class Player : public Character {
+    public:
+        Player(RendererPort* adapter, float positionX, float positionY);
 
-    std::vector<Skill*> activeSkills;
+        std::vector<Skill*> activeSkills;
 
-    void attack() override;
+        void attack() override;
 
-    void verifyKeyboardCommands();
-};
+        void verifyKeyboardCommands();
+    };
+}
 
 #endif // PLAYER_H
 
