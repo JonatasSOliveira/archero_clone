@@ -4,9 +4,10 @@
 #include <iostream>
 
 #include "VisualElement.h"
+#include "HitBox.h"
 
 namespace Game {
-    class Character : public VisualElement {
+    class Character : public HitBox {
     private:
         int maxHealth = 0;
         int baseAttackPoints = 0;

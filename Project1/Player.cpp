@@ -26,3 +26,8 @@ void Player::verifyKeyboardCommands() {
         this->goRight();
     }
 }
+
+void Player::onCollision(const Character& other) {
+    Character::onCollision(other);
+    std::cout << "Player collision with another hitbox" << std::endl;
+}

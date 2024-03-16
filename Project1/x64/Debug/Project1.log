@@ -1,45 +1,181 @@
-﻿  Character.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+﻿  HitBox.cpp
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+  (compilando o arquivo fonte 'HitBox.cpp')
+  
+C:\projetos\archero_clone\Project1\Character.h(10,30): error C2504: 'HitBox': classe base indefinida
+  (compilando o arquivo fonte 'HitBox.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(16,46): error C2039: ' positionXInMeters': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(16,72): error C2039: ' hitBoxWidth': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(17,55): error C2039: ' positionXInMeters': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(18,35): error C2039: ' positionYInMeters': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(18,61): error C2039: ' hitBoxHeight': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+C:\projetos\archero_clone\Project1\HitBox.cpp(19,56): error C2039: ' positionYInMeters': não é um membro de 'Game::Character'
+  C:\projetos\archero_clone\Project1\Character.h(10,11):
+  consulte a declaração de 'Game::Character'
+  
+  Character.cpp
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+  (compilando o arquivo fonte 'Character.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Character.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Character.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Character.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C2143: erro de sintaxe: ',' ausente antes de '&'
   (compilando o arquivo fonte 'Character.cpp')
   
   Enemy.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
   (compilando o arquivo fonte 'Enemy.cpp')
   
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Enemy.cpp(23,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Enemy.cpp(24,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
-  Game.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Game.cpp')
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Enemy.cpp')
   
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Game.cpp(74,15): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Enemy.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Enemy.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Enemy.cpp')
+  
+C:\projetos\archero_clone\Project1\Enemy.h(16,14): error C3668: 'Game::Enemy::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
+  (compilando o arquivo fonte 'Enemy.cpp')
+  
+C:\projetos\archero_clone\Project1\Enemy.cpp(23,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
+C:\projetos\archero_clone\Project1\Enemy.cpp(24,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
+C:\projetos\archero_clone\Project1\Enemy.cpp(35,16): error C2664: 'void Game::HitBox::onCollision(const int)': não é possível converter um argumento 1 de 'const Game::Character' em 'const int'
+  C:\projetos\archero_clone\Project1\Enemy.cpp(35,28):
+  Nenhum operador de conversão definida pelo usuário disponível que possa realizar esta conversão, ou o operador não pode ser chamado
+  C:\projetos\archero_clone\Project1\HitBox.h(15,22):
+  consulte a declaração de 'Game::HitBox::onCollision'
+  C:\projetos\archero_clone\Project1\Enemy.cpp(35,16):
+  ao tentar corresponder a lista de argumentos '(const Game::Character)'
+  
   Origem.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\Player.h(20,14): error C3668: 'Game::Player::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
+  (compilando o arquivo fonte 'Origem.cpp')
+  
+C:\projetos\archero_clone\Project1\Enemy.h(16,14): error C3668: 'Game::Enemy::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
   (compilando o arquivo fonte 'Origem.cpp')
   
   Player.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
   (compilando o arquivo fonte 'Player.cpp')
   
-  SDLRendererAdapter.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'SDLRendererAdapter.cpp')
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Player.cpp')
   
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(36,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(36,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(37,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(37,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(38,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(38,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(39,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(39,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-  Scene.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Scene.cpp')
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Player.cpp')
   
-  VisualElement.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'VisualElement.cpp')
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Player.cpp')
   
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Player.cpp')
+  
+C:\projetos\archero_clone\Project1\Player.h(20,14): error C3668: 'Game::Player::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
+  (compilando o arquivo fonte 'Player.cpp')
+  
+C:\projetos\archero_clone\Project1\Player.cpp(31,16): error C2664: 'void Game::HitBox::onCollision(const int)': não é possível converter um argumento 1 de 'const Game::Character' em 'const int'
+  C:\projetos\archero_clone\Project1\Player.cpp(31,28):
+  Nenhum operador de conversão definida pelo usuário disponível que possa realizar esta conversão, ou o operador não pode ser chamado
+  C:\projetos\archero_clone\Project1\HitBox.h(15,22):
+  consulte a declaração de 'Game::HitBox::onCollision'
+  C:\projetos\archero_clone\Project1\Player.cpp(31,16):
+  ao tentar corresponder a lista de argumentos '(const Game::Character)'
+  
+  Game.cpp
+C:\projetos\archero_clone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(15,49): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\HitBox.h(16,45): error C2143: erro de sintaxe: ',' ausente antes de '&'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\Enemy.h(16,14): error C3668: 'Game::Enemy::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\Player.h(20,14): error C3668: 'Game::Player::onCollision': método com especificador de substituição 'override' não substituiu nenhum método de classe base
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\projetos\archero_clone\Project1\Game.cpp(73,35): error C2664: 'bool Game::HitBox::verifyCollision(const int)': não é possível converter um argumento 1 de '_Ty' em 'const int'
+C:\projetos\archero_clone\Project1\Game.cpp(73,35): error C2664:         with
+C:\projetos\archero_clone\Project1\Game.cpp(73,35): error C2664:         [
+C:\projetos\archero_clone\Project1\Game.cpp(73,35): error C2664:             _Ty=Game::Character
+C:\projetos\archero_clone\Project1\Game.cpp(73,35): error C2664:         ]
+  C:\projetos\archero_clone\Project1\Game.cpp(73,61):
+  Nenhum operador de conversão definida pelo usuário disponível que possa realizar esta conversão, ou o operador não pode ser chamado
+  C:\projetos\archero_clone\Project1\HitBox.h(16,14):
+  consulte a declaração de 'Game::HitBox::verifyCollision'
+  C:\projetos\archero_clone\Project1\Game.cpp(73,35):
+  ao tentar corresponder a lista de argumentos '(_Ty)'
+          with
+          [
+              _Ty=Game::Character
+          ]
+  
+C:\projetos\archero_clone\Project1\Game.cpp(75,35): error C2664: 'void Game::HitBox::onCollision(const int)': não é possível converter um argumento 1 de '_Ty' em 'const int'
+C:\projetos\archero_clone\Project1\Game.cpp(75,35): error C2664:         with
+C:\projetos\archero_clone\Project1\Game.cpp(75,35): error C2664:         [
+C:\projetos\archero_clone\Project1\Game.cpp(75,35): error C2664:             _Ty=Game::Character
+C:\projetos\archero_clone\Project1\Game.cpp(75,35): error C2664:         ]
+  C:\projetos\archero_clone\Project1\Game.cpp(75,57):
+  Nenhum operador de conversão definida pelo usuário disponível que possa realizar esta conversão, ou o operador não pode ser chamado
+  C:\projetos\archero_clone\Project1\HitBox.h(15,22):
+  consulte a declaração de 'Game::HitBox::onCollision'
+  C:\projetos\archero_clone\Project1\Game.cpp(75,35):
+  ao tentar corresponder a lista de argumentos '(_Ty)'
+          with
+          [
+              _Ty=Game::Character
+          ]
+  
+C:\projetos\archero_clone\Project1\Game.cpp(94,15): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
   Gerando Código...
-  Project1.vcxproj -> C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\x64\Debug\Project1.exe

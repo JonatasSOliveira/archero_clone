@@ -5,7 +5,7 @@ using namespace Game;
 
 Character::Character(
     RendererPort* adapter, const RenderDataDTO& renderDataDTOParam
-) : VisualElement(adapter, renderDataDTOParam) {}
+) : HitBox(adapter, renderDataDTOParam) {}
 
 void Character::goDown() {
     this->positionYInMeters = this->positionYInMeters + this->currentSpeedPoints;

@@ -7,8 +7,12 @@
 #include "SDLRendererAdapter.h"
 #include "Scene.h"
 #include "config.h"
+#include "HitBox.h"
 
 using namespace Game;
+//faca um vetor de any contendo inimigos e player
+std::vector<Character> objects;
+
 
 GameEngine::GameEngine(Window& window_) : window(window_)
 {
@@ -32,6 +36,7 @@ void GameEngine::startGame()
     SDLRendererAdapter *sdlAdapter = new SDLRendererAdapter(this->rendererRef);
 
     Player player = Player(sdlAdapter, Config::windowWidth / 2 - 25, Config::sceneHeight);
+    objects.push_back(player);
     Scene scene = Scene(sdlAdapter);
     std::vector<Enemy> enemies = this->createEnemies(this->rendererRef);
     std::cout << "Enemies count: " << enemies.size() << std::endl;
@@ -59,6 +64,21 @@ void GameEngine::startGame()
             enemy.renderElement();
         }
 
+        for (int i = 0; i < objects.size(); i++)
+        {
+            for (int j = 0; j < objects.size(); j++)
+            {
+                if (i != j)
+                {
+                    if (objects[i].verifyCollision(objects[j]))
+                    {
+                        objects[i].onCollision(objects[j]);
+                    }
+                }
+            }
+        }
+        
+
         SDL_RenderPresent(this->rendererRef);
         SDL_Delay(10); // Espera um pouco antes de continuar
     }
@@ -76,6 +96,7 @@ std::vector<Enemy> GameEngine::createEnemies(SDL_Renderer *renderer)
     {
         Enemy enemy = Enemy(new SDLRendererAdapter(this->rendererRef));
         enemies.push_back(enemy);
+        objects.push_back(enemy);
         enemy.renderElement();
     }
 

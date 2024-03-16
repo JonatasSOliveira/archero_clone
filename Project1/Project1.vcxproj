@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HitBox.cpp" />
     <ClCompile Include="PhysicsEngine.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Character.cpp" />
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
+    <ClInclude Include="HitBox.h" />
     <ClInclude Include="PhysicsEngine.h" />
     <ClInclude Include="RendererPort.h" />
     <ClInclude Include="resource.h" />

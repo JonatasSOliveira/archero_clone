@@ -13,6 +13,7 @@ namespace Game {
         void attack() override;
         void randomizePosition();
         void updateEnemy();
+        void onCollision(const Character& other) override;
     };
 }
 

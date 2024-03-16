@@ -96,6 +96,9 @@
     <ClCompile Include="PhysicsEngine.cpp">
       <Filter>Arquivos de Origem\domain\engines</Filter>
     </ClCompile>
+    <ClCompile Include="HitBox.cpp">
+      <Filter>Arquivos de Origem\domain\entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
@@ -145,6 +148,9 @@
     </ClInclude>
     <ClInclude Include="RendererPort.h">
       <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="HitBox.h">
+      <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
