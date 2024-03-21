@@ -1,11 +1,12 @@
 #include <SDL.h>
 #include "Character.h"
+#include "VisualElement.h"
 
 using namespace Game;
 
 Character::Character(
     RendererPort* adapter, const RenderDataDTO& renderDataDTOParam
-) : HitBox(adapter, renderDataDTOParam) {}
+) : VisualElement(adapter, renderDataDTOParam) {}
 
 void Character::goDown() {
     this->positionYInMeters = this->positionYInMeters + this->currentSpeedPoints;

@@ -32,6 +32,5 @@ void Enemy::updateEnemy() {}
 
 
 void Enemy::onCollision(const Character& other) {
-    Character::onCollision(other);
     std::cout << "Player collision with another hitbox" << std::endl;
 }

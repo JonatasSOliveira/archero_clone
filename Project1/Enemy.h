@@ -1,6 +1,4 @@
 #pragma once
-#ifndef ENEMY_H
-#define ENEMY_H
 
 #include "Character.h"
 #include <iostream>
@@ -16,5 +14,3 @@ namespace Game {
         void onCollision(const Character& other) override;
     };
 }
-
-#endif // ENEMY_H

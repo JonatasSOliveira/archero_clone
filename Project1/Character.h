@@ -1,13 +1,11 @@
 #pragma once
-#ifndef CHARACTER_H
-#define CHARACTER_H
 #include <iostream>
 
 #include "VisualElement.h"
-#include "HitBox.h"
+#include "RendererPort.h"
 
 namespace Game {
-    class Character : public HitBox {
+    class Character : public VisualElement {
     private:
         int maxHealth = 0;
         int baseAttackPoints = 0;
@@ -32,5 +30,3 @@ namespace Game {
         void goLeft();
     };
 }
-
-#endif // CHARACTER_H

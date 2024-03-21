@@ -7,10 +7,8 @@
 #include "SDLRendererAdapter.h"
 #include "Scene.h"
 #include "config.h"
-#include "HitBox.h"
 
 using namespace Game;
-//faca um vetor de any contendo inimigos e player
 std::vector<Character> objects;
 
 

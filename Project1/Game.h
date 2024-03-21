@@ -1,6 +1,4 @@
 #pragma once
-#ifndef GAME_H
-#define GAME_H
 
 #include "Window.h"
 #include "Enemy.h"
@@ -19,6 +17,4 @@ namespace Game {
 		void startGame();
 	};
 }
-
-#endif // GAME_H
 

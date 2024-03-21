@@ -1,6 +1,4 @@
 #pragma once
-#ifndef PLAYER_H
-#define PLAYER_H
 
 #include "Character.h"
 #include "Skill.h"
@@ -20,7 +18,5 @@ namespace Game {
         void onCollision(const Character& other) override;
     };
 }
-
-#endif // PLAYER_H
 
 

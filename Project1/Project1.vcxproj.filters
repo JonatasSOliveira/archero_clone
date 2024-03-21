@@ -78,7 +78,7 @@
     <ClCompile Include="Skill.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
-    <ClCompile Include="VisualElement.cpp">
+    <ClCompile Include="Object.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
     <ClCompile Include="SDLRendererAdapter.cpp">
@@ -96,7 +96,7 @@
     <ClCompile Include="PhysicsEngine.cpp">
       <Filter>Arquivos de Origem\domain\engines</Filter>
     </ClCompile>
-    <ClCompile Include="HitBox.cpp">
+    <ClCompile Include="VisualElement.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
   </ItemGroup>
@@ -113,7 +113,7 @@
     <ClInclude Include="Player.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
-    <ClInclude Include="VisualElement.h">
+    <ClInclude Include="Object.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
     <ClInclude Include="SDLRendererAdapter.h">
@@ -150,6 +150,9 @@
       <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
     </ClInclude>
     <ClInclude Include="HitBox.h">
+      <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualElement.h">
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
   </ItemGroup>

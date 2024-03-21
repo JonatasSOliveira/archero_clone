@@ -1,33 +1,19 @@
 #pragma once
-#ifndef VISUALELEMENT_H
-#define VISUALELEMENT_H
-#include "RendererPort.h"
-#include "RenderDataDTO.h"
+
+#include "Object.h"
+#include "HitBox.h"
+#include <vector>
 
 namespace Game {
-	class VisualElement
-	{
-	protected:
-		RendererPort* rendererPort;
-		float positionXInMeters;
-		float positionYInMeters;
+	class VisualElement: public Object {
+	public:
 		float widthInMeters;
 		float heightInMeters;
 		std::string hexColor;
-
-	public:
-		VisualElement(RendererPort* adapter, const RenderDataDTO& renderDataDTOParam);
-
-		void renderElement() {
-			this->rendererPort->renderElement(RenderDataDTO{
-				this->positionXInMeters,
-				this->positionYInMeters,
-				this->widthInMeters,
-				this->heightInMeters,
-				this->hexColor
-			});
-		}
+		std::vector<HitBox> hitBox;
+		virtual void onCollision(const Character& other);
+		bool verifyCollision(const Character& other);
+		VisualElement(RendererPort* adapter, const RenderDataDTO& renderDataDTO);
 	};
 }
 
-#endif // VISUALELEMENT_H

@@ -12,9 +12,3 @@ HitBox::HitBox(
 	this->hitBoxWidth = renderDataDTOParam.widthInMeters + 10;
 }
 
-bool HitBox::verifyCollision(const Character& other) {
-	return bool(this->positionXInMeters < other.positionXInMeters + other.hitBoxWidth &&
-		this->positionXInMeters + this->hitBoxWidth > other.positionXInMeters &&
-		this->positionYInMeters < other.positionYInMeters + other.hitBoxHeight &&
-		this->positionYInMeters + this->hitBoxHeight > other.positionYInMeters);
-}

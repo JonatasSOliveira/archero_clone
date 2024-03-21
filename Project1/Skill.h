@@ -1,6 +1,4 @@
 #pragma once
-#ifndef SKILL_H
-#define SKILL_H
 
 #include <string>
 #include <string_view>
@@ -17,5 +15,4 @@ public:
     std::string getDescription();
 };
 
-#endif // SKILL_H
 
