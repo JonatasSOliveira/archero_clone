@@ -10,7 +10,7 @@
 namespace Game {
     class Player : public Character {
     public:
-        Player(RendererPort* adapter, float positionX, float positionY);
+        Player(RendererPort* adapter, PhysicsEngine* physicsEngine_, float positionX, float positionY);
 
         std::vector<Skill*> activeSkills;
 

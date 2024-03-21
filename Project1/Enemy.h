@@ -9,7 +9,7 @@ namespace Game {
     class Enemy : public Character {
 
     public:
-        Enemy(RendererPort* adapter);
+        Enemy(RendererPort* adapter, PhysicsEngine* physicsEngine_);
         void attack() override;
         void randomizePosition();
         void updateEnemy();

@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "VisualElement.h"
+#include "PhysicsEngine.h"
 
 namespace Game {
     class Character : public VisualElement {
@@ -17,11 +18,12 @@ namespace Game {
         int currentHealth = 0;
         int currentAttackPoints = 0;
         int currentDefensePoints = 0;
-        int currentSpeedPoints = 5;
+        int currentSpeedPoints = 1;
         int currentSpeedAtackPoints = 0;
 
+        PhysicsEngine* physicsEngine = nullptr;
     public:
-        Character(RendererPort* adapter, const RenderDataDTO& renderDataDTOParam);
+        Character(RendererPort* adapter, PhysicsEngine* physicsEngine_, const RenderDataDTO& renderDataDTOParam);
 
         virtual void attack() = 0;
 

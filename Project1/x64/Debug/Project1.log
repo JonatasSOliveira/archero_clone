@@ -1,45 +1,9 @@
-﻿  Character.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Character.cpp')
-  
-  Enemy.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Enemy.cpp')
-  
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Enemy.cpp(23,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Enemy.cpp(24,19): warning C4244: 'inicializando': conversão de 'int' para 'float', possível perda de dados
-  Game.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Game.cpp')
-  
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\Game.cpp(74,15): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+﻿  Verificando fontes para dependências de módulo...
+  SDLTimeServiceAdapter.h
+  Compilando...
+  SDLTimeServiceAdapter.h
   Origem.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
+C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,1): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
   (compilando o arquivo fonte 'Origem.cpp')
   
-  Player.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Player.cpp')
-  
-  SDLRendererAdapter.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'SDLRendererAdapter.cpp')
-  
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(36,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(36,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(37,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(37,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(38,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(38,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(39,22): warning C4838: a conversão de 'const float' em 'int' requer uma conversão de restrição
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\SDLRendererAdapter.cpp(39,22): warning C4244: 'inicializando': conversão de 'const float' para 'int', possível perda de dados
-  Scene.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'Scene.cpp')
-  
-  VisualElement.cpp
-C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\Project1\RendererPort.h(2,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'VisualElement.cpp')
-  
-  Gerando Código...
   Project1.vcxproj -> C:\Users\jonatas.oliveira\Projetos\Faculdade\ArcheroClone\x64\Debug\Project1.exe

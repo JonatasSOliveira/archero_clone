@@ -154,9 +154,11 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Origem.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="SDLRendererAdapter.cpp" />
+    <ClCompile Include="SDLTimeServiceAdapter.h" />
     <ClCompile Include="Skill.cpp" />
+    <ClCompile Include="TimeServicePort.h" />
     <ClCompile Include="VisualElement.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
@@ -169,7 +171,7 @@
     <ClInclude Include="Character.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameEngine.h" />
     <ClInclude Include="RenderDataDTO.h" />
     <ClInclude Include="SDLRendererAdapter.h" />
     <ClInclude Include="Skill.h" />

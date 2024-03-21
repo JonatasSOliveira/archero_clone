@@ -6,10 +6,21 @@
 
 using namespace Game;
 
+SDLRendererAdapter::SDLRendererAdapter(SDL_Window* sdlWindow) {
+    this->sdlRenderer = SDL_CreateRenderer(sdlWindow, -1, SDL_RENDERER_ACCELERATED);
+    if (this->sdlRenderer == nullptr)
+    {
+        std::cerr << "Renderer could not be created! SDL_Error: " << SDL_GetError() << std::endl;
+        SDL_DestroyWindow(sdlWindow);
+        SDL_Quit();
+        throw std::runtime_error("Ocorreu um erro!");
+    }
+}
+
 void SDLRendererAdapter::setRGBAColors(std::string_view hexColor) {
-    std::string hex = std::string(hexColor); // Convertendo std::string_view para std::string
+    std::string hex = std::string(hexColor);
     if (!hex.empty() && hex[0] == '#') {
-        hex = hex.substr(1); // Removendo '#' se presente
+        hex = hex.substr(1);
     }
 
     // Converte o valor hexadecimal para um valor inteiro
@@ -38,6 +49,6 @@ void SDLRendererAdapter::renderElement(const RenderDataDTO& renderDataDTO) {
         renderDataDTO.widthInMeters,
         renderDataDTO.heightInMeters
     };
-    SDL_SetRenderDrawColor(this->renderer, this->redColor, this->greenColor, this->blueColor, this->alphaColor);
-    SDL_RenderFillRect(this->renderer, &fillRect);
+    SDL_SetRenderDrawColor(this->sdlRenderer, this->redColor, this->greenColor, this->blueColor, this->alphaColor);
+    SDL_RenderFillRect(this->sdlRenderer, &fillRect);
 }

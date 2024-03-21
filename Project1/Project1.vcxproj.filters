@@ -87,7 +87,7 @@
     <ClCompile Include="Scene.cpp">
       <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="GameEngine.cpp">
       <Filter>Arquivos de Origem\application</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
@@ -95,6 +95,12 @@
     </ClCompile>
     <ClCompile Include="PhysicsEngine.cpp">
       <Filter>Arquivos de Origem\domain\engines</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeServicePort.h">
+      <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLTimeServiceAdapter.h">
+      <Filter>Arquivos de Cabeçalho\infrasctructure\external_libs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -123,12 +129,9 @@
       <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
     <ClInclude Include="RendererPort.h">
-      <Filter>Arquivos de Cabeçalho\domain\dtos</Filter>
-    </ClInclude>
-    <ClInclude Include="RendererPort.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="GameEngine.h">
       <Filter>Arquivos de Cabeçalho\application</Filter>
     </ClInclude>
     <ClInclude Include="Window.h">
@@ -142,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="config.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererPort.h">
+      <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
     </ClInclude>
     <ClInclude Include="RendererPort.h">
       <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>

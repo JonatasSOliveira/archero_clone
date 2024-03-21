@@ -8,8 +8,9 @@
 
 using namespace Game;
 
-Enemy::Enemy(RendererPort* adapter) : Character(adapter, RenderDataDTO{ 0, 0, 50, 50, "#ff0000" })
-{
+Enemy::Enemy(RendererPort* rendererPort_, PhysicsEngine* physicsEngine_) : Character(
+    rendererPort_, physicsEngine_, RenderDataDTO{ 0, 0, 50, 50, "#ff0000" }
+) {
     this->randomizePosition();
 }
 

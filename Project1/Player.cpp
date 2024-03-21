@@ -4,8 +4,8 @@
 using namespace Game;
 
 Player::Player(
-    RendererPort* adapter, float positionXInMeters, float positionYInMeters
-) : Character(adapter, RenderDataDTO{ positionXInMeters, positionYInMeters, 50, 50, "#ffff00" }) {}
+    RendererPort* rendererPort_, PhysicsEngine* physicsEngine_, float positionXInMeters, float positionYInMeters
+) : Character(rendererPort_, physicsEngine_, RenderDataDTO{ positionXInMeters, positionYInMeters, 50, 50, "#ffff00" }) {}
 
 void Player::attack() {
     std::cout << "Player attack" << std::endl;
