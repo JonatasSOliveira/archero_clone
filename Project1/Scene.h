@@ -6,5 +6,6 @@ namespace Game {
 	{
 	public:
 		Scene(RendererPort* adapter);
+		void onCollision() override;
 	};
 }

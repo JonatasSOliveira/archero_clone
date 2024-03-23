@@ -16,13 +16,21 @@ GameEngine::GameEngine(Window& window_, RendererPort* rendererPort_, TimeService
     this->physicsEngine = new PhysicsEngine(this->timeServicePort);
 }
 
+
+
 void GameEngine::startGame()
 {
     SDL_bool done = SDL_FALSE;
     Player player = Player(this->rendererPort, this->physicsEngine, Config::windowWidth / 2 - 25, Config::sceneHeight);
     Scene scene = Scene(this->rendererPort);
+
     std::vector<Enemy> enemies = this->createEnemies();
-    std::cout << "Enemies count: " << enemies.size() << std::endl;
+    std::vector<VisualElement*> elements;
+    elements.push_back(&player);
+    for (Enemy& enemy : enemies)
+    {
+		elements.push_back(&enemy);
+	}
 
     this->timeServicePort->updateLastCurrentTimeInMilliseconds();
     this->timeServicePort->updateLastElapsedTimeInMilliseconds();
@@ -44,6 +52,16 @@ void GameEngine::startGame()
         {
             enemy.renderElement();
         }
+        
+        int n = elements.size(); 
+        for (int i = 0; i < n; ++i) {
+            for (int j = i + 1; j < n; ++j) {
+                VisualElement* element = elements[i];
+                VisualElement* otherElement = elements[j];
+                element->verifyCollision(otherElement);
+            }
+        }
+
         this->rendererPort->renderPresent();
         this->timeServicePort->updateLastElapsedTimeInMilliseconds();
     }

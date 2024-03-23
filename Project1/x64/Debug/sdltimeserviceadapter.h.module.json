@@ -5,14 +5,14 @@
         {
             "primary-output": "x64\\Debug\\SDLTimeServiceAdapter.h.obj",
             "outputs": [
-                "C:\\Users\\jonatas.oliveira\\Projetos\\Faculdade\\ArcheroClone\\Project1\\x64\\Debug\\vc143.pdb",
+                "C:\\projetos\\archero_clone\\Project1\\x64\\Debug\\vc143.pdb",
                 "x64\\Debug\\",
-                "C:\\Users\\jonatas.oliveira\\Projetos\\Faculdade\\ArcheroClone\\Project1\\x64\\Debug\\SDLTimeServiceAdapter.h.ifc"
+                "C:\\projetos\\archero_clone\\Project1\\x64\\Debug\\SDLTimeServiceAdapter.h.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "SDLTimeServiceAdapter.h",
-                    "source-path": "c:\\users\\jonatas.oliveira\\projetos\\faculdade\\archeroclone\\project1\\sdltimeserviceadapter.h",
+                    "source-path": "c:\\projetos\\archero_clone\\project1\\sdltimeserviceadapter.h",
                     "lookup-method": "absolute"
                 }
             ],

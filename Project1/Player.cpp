@@ -26,3 +26,10 @@ void Player::verifyKeyboardCommands() {
         this->goRight();
     }
 }
+
+void Player::onCollision() {
+	std::cout << "Player collision" << std::endl;
+    this->hexColor = "00000"; 
+
+
+}

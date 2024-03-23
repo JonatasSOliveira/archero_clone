@@ -13,3 +13,7 @@ Scene::Scene(RendererPort* adapter) : VisualElement(adapter, RenderDataDTO{
 ) {
 
 }
+
+void Scene::onCollision() {
+	std::cout << "Scene collision" << std::endl;
+}

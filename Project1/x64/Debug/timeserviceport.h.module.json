@@ -5,14 +5,14 @@
         {
             "primary-output": "x64\\Debug\\TimeServicePort.h.obj",
             "outputs": [
-                "C:\\Users\\jonatas.oliveira\\Projetos\\Faculdade\\ArcheroClone\\Project1\\x64\\Debug\\vc143.pdb",
+                "C:\\projetos\\archero_clone\\Project1\\x64\\Debug\\vc143.pdb",
                 "x64\\Debug\\",
-                "C:\\Users\\jonatas.oliveira\\Projetos\\Faculdade\\ArcheroClone\\Project1\\x64\\Debug\\TimeServicePort.h.ifc"
+                "C:\\projetos\\archero_clone\\Project1\\x64\\Debug\\TimeServicePort.h.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "TimeServicePort.h",
-                    "source-path": "c:\\users\\jonatas.oliveira\\projetos\\faculdade\\archeroclone\\project1\\timeserviceport.h",
+                    "source-path": "c:\\projetos\\archero_clone\\project1\\timeserviceport.h",
                     "lookup-method": "absolute"
                 }
             ],

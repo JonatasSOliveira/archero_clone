@@ -27,6 +27,9 @@ namespace Game {
 				this->hexColor
 			});
 		}
+
+		virtual void onCollision() = 0;
+		void verifyCollision(VisualElement* otherElement);
 	};
 }
 

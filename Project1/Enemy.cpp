@@ -27,6 +27,12 @@ void Enemy::randomizePosition()
     std::cout << "randomX" << randomX << std::endl;
     this->positionXInMeters = randomX;
     this->positionYInMeters = randomY;
+
 }
 
 void Enemy::updateEnemy() {}
+
+void Enemy::onCollision()
+{
+	std::cout << "Enemy collision" << std::endl;
+}

@@ -12,3 +12,12 @@ VisualElement::VisualElement(
     this->hexColor = renderDataDTO.hexColor;
 }
 
+void VisualElement::verifyCollision(VisualElement* otherElement) {
+
+    if (this->positionXInMeters < otherElement->positionXInMeters + otherElement->widthInMeters &&
+        this->positionXInMeters + this->widthInMeters > otherElement->positionXInMeters &&
+        this->positionYInMeters < otherElement->positionYInMeters + otherElement->heightInMeters &&
+        this->heightInMeters + this->positionYInMeters > otherElement->positionYInMeters) {
+        this->onCollision();
+	}
+}
