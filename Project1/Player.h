@@ -1,7 +1,4 @@
 #pragma once
-#ifndef PLAYER_H
-#define PLAYER_H
-
 #include "Character.h"
 #include "Skill.h"
 #include <vector>
@@ -20,7 +17,4 @@ namespace Game {
         void onCollision() override;
     };
 }
-
-#endif // PLAYER_H
-
 

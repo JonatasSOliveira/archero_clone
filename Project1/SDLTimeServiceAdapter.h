@@ -1,3 +1,4 @@
+#pragma once
 #include "TimeServicePort.h"
 #include <SDL.h>
 #include <iostream>

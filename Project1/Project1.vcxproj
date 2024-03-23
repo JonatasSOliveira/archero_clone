@@ -149,6 +149,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PhysicsEngine.cpp" />
+    <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Enemy.cpp" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="config.h" />
     <ClInclude Include="PhysicsEngine.h" />
+    <ClInclude Include="Projectile.h" />
     <ClInclude Include="RendererPort.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.h" />

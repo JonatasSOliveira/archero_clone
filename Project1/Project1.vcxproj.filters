@@ -61,6 +61,9 @@
     <Filter Include="Arquivos de Cabeçalho\domain\engines">
       <UniqueIdentifier>{323b2016-4ce8-4398-b530-592f9faa5c23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\domain\services">
+      <UniqueIdentifier>{981a03da-ad5a-47d8-b5b1-3bef6adc547a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Origem.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="SDLTimeServiceAdapter.h">
       <Filter>Arquivos de Cabeçalho\infrasctructure\external_libs</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Arquivos de Origem\domain\entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="RendererPort.h">
       <Filter>Arquivos de Cabeçalho\domain\ports\output_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Arquivos de Cabeçalho\domain\entitites</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

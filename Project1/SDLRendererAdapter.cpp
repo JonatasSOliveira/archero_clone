@@ -41,7 +41,7 @@ void SDLRendererAdapter::setRGBAColors(std::string_view hexColor) {
     }
 }
 
-void SDLRendererAdapter::renderElement(const RenderDataDTO& renderDataDTO) {
+void SDLRendererAdapter::renderElement  (const RenderDataDTO& renderDataDTO) {
     this->setRGBAColors(renderDataDTO.hexColor);
     SDL_Rect fillRect = {
         renderDataDTO.positionXInMeters,

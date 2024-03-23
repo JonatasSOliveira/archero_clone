@@ -31,3 +31,13 @@ ipch/
 # Ignore generated folders
 bin/
 obj/
+
+*.cache
+*.lib
+*.ncb
+*.tmp
+*.tmp_proj
+*.bak
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/

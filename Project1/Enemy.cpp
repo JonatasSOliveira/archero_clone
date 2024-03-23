@@ -9,7 +9,7 @@
 using namespace Game;
 
 Enemy::Enemy(RendererPort* rendererPort_, PhysicsEngine* physicsEngine_) : Character(
-    rendererPort_, physicsEngine_, RenderDataDTO{ 0, 0, 50, 50, "#ff0000" }
+    rendererPort_, physicsEngine_, RenderDataDTO{ 0, 0, 50, 50, "#ff9933" }
 ) {
     this->randomizePosition();
 }

@@ -21,7 +21,9 @@ namespace Game {
         int currentSpeedPoints = 1;
         int currentSpeedAtackPoints = 0;
 
+    protected:
         PhysicsEngine* physicsEngine = nullptr;
+
     public:
         Character(RendererPort* adapter, PhysicsEngine* physicsEngine_, const RenderDataDTO& renderDataDTOParam);
 
